@@ -1,7 +1,9 @@
 <?php
 require dirname(__DIR__) . '/config/bootstrap.php';
+require dirname(__DIR__) . '/model/User.php';
+$user = new User();
+$user->find('all');
 
-debug($_SERVER['PATH_INFO']);
 
 // $test = [];
 //

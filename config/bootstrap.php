@@ -6,6 +6,8 @@ require __DIR__ .'/paths.php';
 require CORE_PATH . 'Configure.php';
 require CORE_PATH . 'functions.php';
 require CORE_PATH . 'Request.php';
+require CORE_PATH . 'Datasource.php';
+
 
 Configure::load('config');
 

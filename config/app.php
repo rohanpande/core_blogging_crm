@@ -1,9 +1,9 @@
 <?php
 return [
   'database' => [
-    'host'     => '',
-    'username' => '',
-    'password' => '',
-    'database_name' => '',
+    'host'     => 'localhost',
+    'username' => 'root',
+    'password' => 'root',
+    'database_name' => 'core_blog',
   ]
 ];
