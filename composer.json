@@ -1,18 +1,22 @@
 {
-    "name": "rohanpande/core_blog",
-    "description": "This is a simple blogging crm",
+    "name": "rohanpande/simple_core_blgo",
+    "description": "This is a simple core blog",
+    "license": "MIT",
     "authors": [
         {
             "name": "Rohan Pande",
             "email": "rohanpande@sanisoft.com"
         }
     ],
-    "require": {
+    "autoload":{
+      	"psr-4": {
+      	   "App\\": "./src",
+           "Core\\": "./Core"
+      	},
+        "files": [
+          "Core/functions.php"
+        ]
 
-    },
-    "autoload" : {
-      "psr-4": {
-        "App":["/src","/vendor"]
-      }
+
     }
 }
