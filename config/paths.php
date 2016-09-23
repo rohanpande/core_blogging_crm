@@ -14,4 +14,4 @@ define('CONFIG', ROOT . DS . 'config' . DS);
 
 define('WWW_ROOT', ROOT . DS . 'webroot' . DS);
 
-define('CORE_PATH', ROOT . DS . 'Core'. DS );
+define('CORE_PATH', ROOT . DS . 'core'. DS);
