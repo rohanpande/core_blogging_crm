@@ -15,9 +15,9 @@ $stack->push('b');
 $stack->push('a');
 $stack->push('c');
 
-echo $stack->pop().'\n';
-echo $stack->pop().'\n';
-echo $stack->pop().'\n';
+echo $stack->pop().PHP_EOL;
+echo $stack->pop().PHP_EOL;
+echo $stack->pop().PHP_EOL;
 
 
 /*
@@ -34,9 +34,9 @@ $heap->insert('b');
 $heap->insert('a');
 $heap->insert('c');
 
-echo $heap->extract().'\n';
-echo $heap->extract().'\n';
-echo $heap->extract().'\n';
+echo $heap->extract().PHP_EOL;
+echo $heap->extract().PHP_EOL;
+echo $heap->extract().PHP_EOL;
 
 
 /*
@@ -53,9 +53,9 @@ $heap->insert('b');
 $heap->insert('a');
 $heap->insert('c');
 
-echo $heap->extract().'\n';
-echo $heap->extract().'\n';
-echo $heap->extract().'\n';
+echo $heap->extract().PHP_EOL;
+echo $heap->extract().PHP_EOL;
+echo $heap->extract().PHP_EOL;
 
 
 /*
@@ -75,10 +75,10 @@ $pqueue->insert('low', 1);
 $pqueue->insert('top', 3);
 $pqueue->insert('medium', 2);
 
-echo 'TOP ELEMENT: '. $pqueue->top()."\n";
-echo $pqueue->extract()."\n";
-echo $pqueue->extract()."\n";
-echo $pqueue->extract()."\n";
+echo 'TOP ELEMENT: '. $pqueue->top().PHP_EOL;
+echo $pqueue->extract().PHP_EOL;
+echo $pqueue->extract().PHP_EOL;
+echo $pqueue->extract().PHP_EOL;
 
 /*
  |
@@ -94,8 +94,8 @@ $list->push('a');
 $list->push('b');
 $list->push('c');
 
-echo 'TOP: '.$list->top()."\n";
-echo 'BOTTOM: '.$list->bottom()."\n";
+echo 'TOP: '.$list->top().PHP_EOL;
+echo 'BOTTOM: '.$list->bottom().PHP_EOL;
 
 echo 'FIFO:\n';
 
@@ -103,14 +103,14 @@ $list->setIteratorMode(SplDoublyLinkedList::IT_MODE_FIFO);
 
 for($list->rewind(); $list->valid(); $list->next())
 {
-  echo $list->current().'\n';
+  echo $list->current().PHP_EOL;
 }
 
-echo "LIFO:\n"
+echo "LIFO:".PHP_EOL;
 
 $list->setIteratorMode(SplDoublyLinkedList::IT_MODE_LIFO);
 
 for($list->rewind();$list->valid(); $list->next())
 {
-  echo $list->current().'\n';
+  echo $list->current().PHP_EOL;
 }
